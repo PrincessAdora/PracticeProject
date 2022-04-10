@@ -8,19 +8,19 @@ const Page = ({ offset, color }) => (
   <>
     {/* add reusable layers here as Page component*/}
     {/*Background Parallax layer -- behind all other layers */}
-    <ParallaxLayer offset={offset} speed={0.7}>
+    <ParallaxLayer offset={offset} speed={2.5}>
       <div className="background">
         {/* <h3> Add text here for the background if desired! </h3> */}
       </div>
     </ParallaxLayer>
 
     {/*Color Parallax Layer -- over background layer */}
-    <ParallaxLayer offset={offset} speed={0.5}>
+    <ParallaxLayer offset={offset} speed={1}>
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
     {/*Text Parallax Layer -- over color and backgronund layers */}
-    <ParallaxLayer offset={offset} speed={0.5}>
+    <ParallaxLayer offset={offset} speed={2}>
       <div className="text">
         <span>Restaurant Reviews</span>
       </div>
